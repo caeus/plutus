@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="293" />
+    <option name="y" value="53" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.sbt" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../kiwi_gadt" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kiwi/kiwi_baton" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kiwi/kiwi_points" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kiwi/kiwi_settlement" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kiwi/kiwiu_backend" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+</project>
