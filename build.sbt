@@ -1,8 +1,8 @@
 import Dependencies._
 
-ThisBuild / scalaVersion     := "2.13.0"
-ThisBuild / version          := "0.1.0-SNAPSHOT"
-ThisBuild / organization     := "com.example"
+ThisBuild / scalaVersion := "2.13.0"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / organization := "com.example"
 ThisBuild / organizationName := "example"
 
 lazy val root = (project in file("."))
@@ -10,7 +10,7 @@ lazy val root = (project in file("."))
     name := "plutus",
     libraryDependencies += scalaTest % Test
   )
-credentials += Credentials.apply(realm = "Sonatype Nexus Repository Manager",host="oss.sonatype.org",
+credentials += Credentials.apply(realm = "Sonatype Nexus Repository Manager", host = "oss.sonatype.org",
   userName = "caeus", passwd = "OuS0aZ57I$Eg")
 useGpg := true
 ThisBuild / scmInfo := Some(
@@ -21,10 +21,10 @@ ThisBuild / scmInfo := Some(
 )
 ThisBuild / developers := List(
   Developer(
-    id    = "caeus",
-    name  = "Alejandro Navas ",
+    id = "caeus",
+    name = "Alejandro Navas ",
     email = "camilo.a.navas@gmail.com",
-    url   = url("http://medium.com/@caeus")
+    url = url("http://medium.com/@caeus")
   )
 )
 ThisBuild / description := "Principled combinators for string parsing and lexing"
@@ -39,5 +39,14 @@ ThisBuild / publishTo := {
 }
 ThisBuild / publishMavenStyle := true
 
+import sbtrelease.ReleaseStateTransformations._
 
+ThisBuild / releaseProcess := Seq[ReleaseStep]( // Look Ma', my own release step!
+  checkSnapshotDependencies,
+  inquireVersions,
+  runTest,
+  setReleaseVersion,
+  publishArtifacts,
+  setNextVersion
+)
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
