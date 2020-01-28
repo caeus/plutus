@@ -1,6 +1,5 @@
 package com.github.caeus.plutus
 
-import scala.collection.SeqOps
 
 import PackerResult.{Done, Failed}
 
